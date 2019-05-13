@@ -42,7 +42,7 @@ https://localhost:19999
 ![image](https://github.com/P86071244/Netdata_demo1/blob/master/netdataSystemOverview.png)
 
 另外Raspberry Pi的結果如下
-![image]()
+![image](https://github.com/P86071244/Netdata_demo1/blob/master/raspberryPinetdata.png)
 
 若要停止服務，可輸入
 ```
