@@ -1,23 +1,23 @@
 # Netdata初步探索
 ---
 * Netdata簡介
----
+
 Netdata 是一款 Linux 性能實時監測工具。以web的可視化方式展示系統及應用程序的實時運行狀態（包括cpu、內存、硬盤輸入/輸出、網絡等linux性能的數據）。是很像 Nagios 之類的監控軟體，但僅能借由通過 Web 介面進行即時監控。它的 web 前端響應很快，而且不需要 Flash 插件。 UI 很整潔，保持著 Netdata 應有的特性。第一眼看上去，你能夠看到很多圖表，幸運的是絕大多數常用的圖表數據（像 CPU，RAM，網絡和硬碟）都在頂部。如果你想深入了解圖形化數據，你只需要下滑滾動條，或者點擊在右邊菜單的項目。通過每個圖表的右下方的按鈕， Netdata 還能讓你控制圖表的顯示，重置，縮放。目前 Netdata 還沒有驗證機制，如果你擔心別人能從你的電腦上獲取相關信息的話，你應該設置防火牆規則來限制訪問。UI 很簡單，所以任何人看懂圖形並理解他們看到的結果，至少你會對它的快速安裝印象深刻。
 ---
-* 安裝流程
+## 安裝流程
 ---
-## 可以採用 one line installation
+### 可以採用 one line installation
 > This method is **fully automatic on all Linux** distributions. FreeBSD and MacOS systems need some preparations before installing Netdata for the first time. Check the [FreeBSD](#freebsd) and the [MacOS](#macos) sections for more information.
 ```
 bash <(curl -Ss https://my-netdata.io/kickstart.sh)
 ```
 ---
-## 或是 Run Netdata in a Docker container
+### 或是 Run Netdata in a Docker container
 ```
 You can [Install Netdata with Docker](../docker/#install-netdata-with-docker).
 ```
 ---
-## 我採用 Install Netdata on Linux manually
+### 我採用 Install Netdata on Linux manually
 Install the packages for having a **basic Netdata installation** (system monitoring and many applications, without  `mysql` / `mariadb`, `postgres`, `named`, hardware sensors and `SNMP`):
 
 ```sh
@@ -32,7 +32,7 @@ curl -Ss 'https://raw.githubusercontent.com/netdata/netdata-demo-site/master/ins
 ```
 安裝完後 Netdata 即自動啟動，檢查方式 ps aux|grep netdata
 ---
-## 啟用 netdata，並輸入
+### 啟用 netdata，並輸入
 ```
 https://localhost:19999
 ```
@@ -93,7 +93,7 @@ sudo ./netdata-updater.sh
 sudo ln -s /home/pi/netdata/netdata-updater.sh /etc/cron.daily/netdata-updater.sh
 ```
 ---
-* 系統設定
+## 系統設定
 ```
 sudo vi /etc/netdata/netdata.conf
 ```
