@@ -41,6 +41,9 @@ https://localhost:19999
 即可連接 netdata 監控頁面，如下
 ![image](https://github.com/P86071244/Netdata_demo1/blob/master/netdataSystemOverview.png)
 
+另外Raspberry Pi的結果如下
+![image]()
+
 若要停止服務，可輸入
 ```
 systemctl stop netdata
