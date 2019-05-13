@@ -29,7 +29,10 @@ Install all the required packages for **monitoring everything Netdata can monito
 ```sh
 curl -Ss 'https://raw.githubusercontent.com/netdata/netdata-demo-site/master/install-required-packages.sh' >/tmp/kickstart.sh && bash /tmp/kickstart.sh -i netdata-all
 ```
-安裝完後 Netdata 即自動啟動，檢查方式 ps aux|grep netdata
+安裝完後 Netdata 即自動啟動，檢查方式
+```
+ps aux | grep netdata
+```
 ---
 ### 啟用 netdata，並輸入
 ```
