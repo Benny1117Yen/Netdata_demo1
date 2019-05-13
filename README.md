@@ -12,9 +12,9 @@ bash <(curl -Ss https://my-netdata.io/kickstart.sh)
 ```
 ---
 ### 或是 Run Netdata in a Docker container
-```
+
 You can [Install Netdata with Docker](https://github.com/netdata/netdata/blob/v1.14.0/packaging/docker/#install-netdata-with-docker).
-```
+
 ---
 ### 我採用 Install Netdata on Linux manually
 Install the packages for having a **basic Netdata installation** (system monitoring and many applications, without  `mysql` / `mariadb`, `postgres`, `named`, hardware sensors and `SNMP`):
